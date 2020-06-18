@@ -76,12 +76,12 @@ CSS 代码需有明显的代码缩进。
 	margin-right: 10rpx
 }
 ```
-采用 flex 进行布局。
+建议多采用 flex 进行布局。
 
 ```
 .container{
 	disaplay: flex;
-	flex-dirextion: row
+	flex-direction: row
 }
 ```
 
@@ -100,13 +100,13 @@ CSS 代码需有明显的代码缩进。
 
 ## JS 规范
 
-###1.JS 规范
+### 1.JS 规范
 
 ---
 
-###
-
 命名规范
+
+页面、组件、类命名参考微信小程序规范小写开头，驼峰命名法
 
 变量名以及函数名统一采用驼峰命名法，正常情况下函数名前缀需加上清晰的动词表示函数功能。常量需用 const 声明。
 
@@ -119,6 +119,11 @@ let imageContent = res.data
 
 //函数命名
 getInfo:function(){
+	return '';
+}
+
+//点击事件
+phoneClick:function(){
 	return '';
 }
 ```
