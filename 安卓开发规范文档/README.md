@@ -14,7 +14,7 @@ UserInfoManager
 
 ##### 变量名
 
-首字母小写，驼峰，单词或者单词简写，见名知意，长度小于20个字符；禁止使用添加无意义字符或数字的方式区分变量，局部变量使用m开头
+首字母小写，驼峰，单词或者单词简写，见名知意，长度小于20个字符；禁止使用添加无意义字符或数字的方式区分变量， 全局变量使用m开头
 ```
 例子：
 ProductDataBean mProductDatabean;
@@ -51,8 +51,10 @@ MainPickFragment
 
 
 #### 资源名
+??????????????????????????
 
 下划线，英文或者英文简写，见名知意，长度小于20个字符；
+
 
 ##### Layout 
 
@@ -63,28 +65,39 @@ Activity 的layout 以activity_ 开头
 Fragment 的layout 以fragment_ 开头
 Dialog 的layout 以dialog_ 开头
 include 的layout 以include_ 开头
-ListView 的行layout 以list_item_ 开头
-RecyclerView 的item layout 以recycle_item_ 开头
-GridView 的item layout 以grid_item_ 开头
+ListView 的行layout 以adapter_ 开头
+RecyclerView 的item layout 以adapter_ 开头
+GridView 的item layout 以adapter_ 开头
 ```
 
 ##### Iamge 
 
-类型+模块+功能+用途
+类型+模块+功能+状态
 
 ```
+ic_member_userinfo
+bg_meber_userinfo
+btn_menmber_userinfos
+btn_common_bag_select
+btn_common_bag_unselect
+
+
 例子：2.2 image_login_pwd_icon.png
 ```
    
 ##### color 
+
+
+
 资源使用#AARRGGBB 格式，写入module_colors.xml 文件中，命名格式采用以下规则：
 
 ```
-模块名_逻辑名称_颜色
+color_逻辑名称_颜色值
+
 ```
 如：
 ```
-<color name="module_btn_bg_color">#33b5e5e5</color>
+<color name="color_gary_cccccc">#33b5e5e5</color>
 ```
 
 
@@ -107,7 +120,7 @@ GridView 的item layout 以grid_item_ 开头
 ```
 如：
 ```
-moudule_login_tips,module_homepage_notice_desc
+login_tips,homepage_notice_desc
 ```
 
 
@@ -134,7 +147,7 @@ EditText et
 
 #### 方法名
 
-驼峰，首字母小写，单词或者单词简写，动词开头，见名知意，长度小于20个字符；
+驼峰，首字母小写，单词或者单词简写，动词开头，见名知意，长度小于25个字符；
 如：
 ```
 doLogin(); 
@@ -178,7 +191,7 @@ public void doLogin(String userName,String Password){}
 ## 方法规范
 原则上一个方法只做一个功能业务，一个方法内不能封装超过2个以上的业务逻辑
 能抽象公用的逻辑尽量封装成工具方法，减少代码岑余
-所有的公用方法和逻辑处理方法，要求全部内部抛出异常，集中在顶层捕获
+
 
 ```
 public String getDate(long timestamp ,String format) throws Exception{}
@@ -199,6 +212,12 @@ public void doLogin(){
 
 ## 强制规范
 总结开发过程中容易引起严重后果和性能的代码，严格遵守该约定可减少很多日后埋下的“坑”
+
+#### Method
+```
+所有的公用方法和逻辑处理方法，要求全部内部抛出异常，集中在顶层捕获
+```
+
 
 #### Activity 
 

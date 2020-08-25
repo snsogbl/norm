@@ -165,6 +165,61 @@ CSS 代码需有明显的代码缩进。
 }
 ```
 
+###3.统一语义理解和命名
+####布局
+
+|语义|命名|简写|
+|----|----|----|
+|文档	|doc	|doc
+|头部	|head	|hd
+|主体	|body	|bd
+|尾部	|foot	|ft
+|主栏	|main	|mn
+|主栏子容器	|mainc	|mnc
+|侧栏	|side	|sd
+|侧栏子容器	|sidec	|sdc
+|盒容器	|wrap/box	|wrap/box
+|导航	|nav	|nav
+|子导航	|subnav	|snav
+|面包屑	|crumb	|crm
+|菜单	|menu	|menu
+|选项卡	|tab	|tab
+|标题区	|head/title	|hd/tt
+|内容区	|body/content	 |bd/ct
+|列表	|list	|lst
+|表格	|table	|tb
+|表单	|form	|fm
+|热点	|hot	|hot
+|排行	|top	|top
+|登录	|login	|log
+|标志	|logo	|logo
+|广告	|advertise	|ad
+|搜索	|search	|sch
+|幻灯	|slide	|sld
+|提示	|tips	|tips
+|帮助	|help	|help
+|新闻	|news	|news
+|下载	|download	|dld
+|注册	|regist	|reg
+|结果	|result	|rst
+|标题	|title	|title
+|按钮	|button	|btn
+|输入	|input	|ipt
+
+####状态
+
+|语义|命名|简写|
+|----|----|----|
+|选中	|selected	|sel
+|当前	|current	|crt
+|显示	|show	|show
+|隐藏	|hide	|hide
+|打开	|open	|open
+|关闭	|close |close
+|出错	|error	|err
+|不可用	|disabled	|dis
+
+
 ## JS 规范
 
 ### 数据绑定变量定义规范
